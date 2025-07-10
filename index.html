@@ -14,7 +14,7 @@
       }
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #0d0d0d;
+        background: linear-gradient(to bottom, #050b10, #040909);
         color: #fcd34d;
         padding: 0;
         display: flex;
@@ -24,34 +24,31 @@
       main {
         flex: 1;
       }
-      .topbar {
+      .header-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 1rem 2rem;
-        background-color: #0d0d0d;
+        gap: 2rem;
+        padding: 4rem 2rem 2rem;
+        flex-wrap: wrap;
+        text-align: left;
       }
-      .topbar img {
-        width: 48px;
+      .header-logo {
+        width: 120px;
         height: auto;
       }
-      .intro {
-        text-align: center;
-        margin: 2rem 1rem;
-      }
-      h1 {
+      .header-text h1 {
         font-family: 'Unbounded', sans-serif;
         font-size: 2.75rem;
         color: #fcd34d;
-        margin-bottom: 0.5rem;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-bottom: 0.5rem;
       }
-      h2 {
+      .header-text h2 {
         font-size: 1.25rem;
         font-weight: 400;
         color: #d1d5db;
-        margin-bottom: 2rem;
       }
       section {
         padding: 3rem 1rem;
@@ -105,13 +102,18 @@
         }
       }
       @media (max-width: 600px) {
-        .topbar img {
-          width: 36px;
+        .header-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
         }
-        h1 {
+        .header-logo {
+          width: 100px;
+        }
+        .header-text h1 {
           font-size: 1.8rem;
         }
-        h2 {
+        .header-text h2 {
           font-size: 1rem;
         }
         section {
@@ -122,13 +124,12 @@
   </head>
   <body>
     <main>
-      <div class="topbar">
-        <img src="Logo_v4.png" alt="Logo Appsgard" />
-      </div>
-
-      <div class="intro">
-        <h1>Appsgard</h1>
-        <h2>Tech from the realm of the gods</h2>
+      <div class="header-container">
+        <img src="Logo_v4.png" alt="Logo Appsgard" class="header-logo" />
+        <div class="header-text">
+          <h1>Appsgard</h1>
+          <h2>Tech from the realm of the gods</h2>
+        </div>
       </div>
 
       <section>
