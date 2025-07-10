@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Appsgard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
       * {
         margin: 0;
@@ -13,63 +13,92 @@
       }
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #F9FAFB;
-        color: #1F2937;
-        line-height: 1.6;
-        padding: 2rem;
+        background-color: #0d0d0d;
+        color: #fcd34d;
         text-align: center;
+        padding: 0;
+      }
+      header {
+        background-color: #1a1a1a;
+        padding: 3rem 1rem;
+        background-image: url("Banniere_v1.png");
+        background-size: cover;
+        background-position: center;
+        color: #fcd34d;
+      }
+      header img {
+        width: 120px;
+        margin-bottom: 1rem;
       }
       h1 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 3rem;
-        font-weight: 700;
-        color: #2563EB;
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        color: #fcd34d;
         margin-bottom: 1rem;
       }
       h2 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #6B7280;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #e5e7eb;
         margin-bottom: 2rem;
       }
+      section {
+        padding: 3rem 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
       p {
-        max-width: 700px;
-        margin: 0 auto 2rem auto;
         font-size: 1.1rem;
+        line-height: 1.8;
+        color: #d1d5db;
+        margin-bottom: 1.5rem;
       }
       .cta {
-        background-color: #2563EB;
-        color: white;
+        background-color: #fcd34d;
+        color: #1a1a1a;
         padding: 1rem 2rem;
-        font-size: 1.1rem;
-        border: none;
-        border-radius: 0.75rem;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 9999px;
         text-decoration: none;
         display: inline-block;
-        transition: transform 0.2s ease;
+        transition: background-color 0.2s;
       }
       .cta:hover {
-        transform: scale(1.05);
+        background-color: #fde68a;
       }
       footer {
         margin-top: 4rem;
+        padding: 2rem;
+        background-color: #111;
+        color: #6b7280;
         font-size: 0.9rem;
-        color: #6B7280;
       }
     </style>
   </head>
   <body>
-    <h1>Appsgard</h1>
-    <h2>Éditeur de solutions numériques pour le sport amateur</h2>
-    <p>
-      Appsgard est une jeune entreprise technologique française dédiée à la création de services numériques modernes et accessibles. Notre premier projet, <strong>LeBanc</strong>, connecte les clubs, les joueurs et leurs communautés à travers une plateforme intuitive pensée pour le sport amateur.
-    </p>
-    <p>
-      À travers une identité dynamique et une approche centrée sur l'utilisateur, nous voulons offrir des outils simples, utiles et humains.
-    </p>
-    <a href="https://lebancapp.com" class="cta">Découvrir LeBanc</a>
+    <header>
+      <img src="Logo_v4.png" alt="Logo Appsgard" />
+      <h1>Appsgard</h1>
+      <h2>Tech from the realm of the gods</h2>
+    </header>
+
+    <section>
+      <p>
+        Bienvenue dans l'univers d'<strong>Appsgard</strong>, une forge numérique dédiée à la création d'applications puissantes et inspirantes. Nous allions la symbolique des mythes anciens à la technologie moderne pour forger les outils de demain.
+      </p>
+      <p>
+        Notre premier artefact, <strong>LeBanc</strong>, est une plateforme innovante conçue pour les clubs et les sportifs amateurs. Elle connecte les joueurs, simplifie l’organisation et donne de la visibilité au sport local.
+      </p>
+      <p>
+        Rejoins-nous dans cette quête technologique.
+      </p>
+      <a href="https://lebancapp.com" class="cta">Découvrir LeBanc</a>
+    </section>
+
     <footer>
-      © 2025 Appsgard — Tous droits réservés
+      © 2025 Appsgard — Tous droits réservés<br/>
+      contact@appsgard.com
     </footer>
   </body>
 </html>
