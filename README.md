@@ -47,4 +47,4 @@ Tu peux modifier :
 ## Licence
 
 © 2025 Appsgard — Tous droits réservés  
-Contact : [contact@appsgard.com](mailto:contact@appsgard.com)
+Contact : [appsgard.tech@gmail.com](mailto:appsgard.tech@gmail.com)
