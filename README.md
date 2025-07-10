@@ -13,7 +13,7 @@ Cette landing page présente brièvement Appsgard, sa mission, et renvoie vers l
 
 🌐 [https://appsgard.com](https://appsgard.com)
 
-![screenshot](https://via.placeholder.com/1200x600?text=Screenshot+Appsgard+Landing)
+![screenshot](./screenshot.png)
 
 ## Structure
 
