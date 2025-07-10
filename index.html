@@ -17,6 +17,12 @@
         background-color: #0d0d0d;
         color: #fcd34d;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
       }
       .topbar {
         display: flex;
@@ -84,12 +90,10 @@
         background-color: #fde68a;
       }
       footer {
-        margin-top: 4rem;
         padding: 2rem;
         background-color: #111;
         color: #6b7280;
         font-size: 0.9rem;
-        animation: fadeIn 1s ease-in-out both;
         text-align: center;
       }
       @keyframes fadeIn {
@@ -119,29 +123,31 @@
     </style>
   </head>
   <body>
-    <div class="topbar">
-      <img src="Logo_v4.png" alt="Logo Appsgard" />
-    </div>
+    <main>
+      <div class="topbar">
+        <img src="Logo_v4.png" alt="Logo Appsgard" />
+      </div>
 
-    <header></header>
+      <header></header>
 
-    <div class="intro">
-      <h1>Appsgard</h1>
-      <h2>Tech from the realm of the gods</h2>
-    </div>
+      <div class="intro">
+        <h1>Appsgard</h1>
+        <h2>Tech from the realm of the gods</h2>
+      </div>
 
-    <section>
-      <p>
-        Bienvenue dans l'univers d'<strong>Appsgard</strong>, une forge numérique dédiée à la création d'applications puissantes et inspirantes. Nous allions la symbolique des mythes anciens à la technologie moderne pour forger les outils de demain.
-      </p>
-      <p>
-        Notre premier artefact, <strong>LeBanc</strong>, est une plateforme innovante conçue pour les clubs et les sportifs amateurs. Elle connecte les joueurs, simplifie l’organisation et donne de la visibilité au sport local.
-      </p>
-      <p>
-        Rejoins-nous dans cette quête technologique.
-      </p>
-      <a href="https://lebancapp.com" class="cta">Découvrir LeBanc</a>
-    </section>
+      <section>
+        <p>
+          Bienvenue dans l'univers d'<strong>Appsgard</strong>, une forge numérique dédiée à la création d'applications puissantes et inspirantes. Nous allions la symbolique des mythes anciens à la technologie moderne pour forger les outils de demain.
+        </p>
+        <p>
+          Notre premier artefact, <strong>LeBanc</strong>, est une plateforme innovante conçue pour les clubs et les sportifs amateurs. Elle connecte les joueurs, simplifie l’organisation et donne de la visibilité au sport local.
+        </p>
+        <p>
+          Rejoins-nous dans cette quête technologique.
+        </p>
+        <a href="https://lebancapp.com" class="cta">Découvrir LeBanc</a>
+      </section>
+    </main>
 
     <footer>
       © 2025 Appsgard — Tous droits réservés<br />
