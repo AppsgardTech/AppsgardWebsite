@@ -35,18 +35,9 @@
         width: 48px;
         height: auto;
       }
-      header {
-        position: relative;
-        background-image: url('Banniere_v1.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
-        height: 500px;
-        width: 100%;
-      }
       .intro {
         text-align: center;
-        margin-top: 2rem;
+        margin: 2rem 1rem;
       }
       h1 {
         font-family: 'Unbounded', sans-serif;
@@ -68,6 +59,13 @@
         margin: 0 auto;
         animation: fadeIn 1s ease-in-out both;
         text-align: center;
+      }
+      .banner {
+        width: 100%;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 3rem;
       }
       p {
         font-size: 1.1rem;
@@ -128,8 +126,6 @@
         <img src="Logo_v4.png" alt="Logo Appsgard" />
       </div>
 
-      <header></header>
-
       <div class="intro">
         <h1>Appsgard</h1>
         <h2>Tech from the realm of the gods</h2>
@@ -147,11 +143,20 @@
         </p>
         <a href="https://lebancapp.com" class="cta">Découvrir LeBanc</a>
       </section>
+
+      <img src="Banniere_v1.png" alt="Bannière Appsgard" class="banner" />
     </main>
 
     <footer>
-      © 2025 Appsgard — Tous droits réservés<br />
-      contact@appsgard.com
+      <div style="margin-bottom: 1rem;">
+        <strong>Appsgard</strong> — Tech from the realm of the gods
+      </div>
+      <div>
+        <a href="mailto:contact@appsgard.com" style="color: #9ca3af; text-decoration: none;">contact@appsgard.com</a>
+      </div>
+      <div style="margin-top: 1rem; font-size: 0.85rem; color: #4b5563;">
+        © 2025 Appsgard — Tous droits réservés
+      </div>
     </footer>
   </body>
 </html>
