@@ -3,163 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Appsgard</title>
+    <meta
+      name="description"
+      content="Appsgard — applications utiles et soignées. Découvrez SquadMaster et nos projets à venir."
+    />
+    <title>Appsgard — Tech from the realm of the gods</title>
     <link rel="icon" type="image/png" href="Logo_v4.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: 'Inter', sans-serif;
-        background: linear-gradient(to bottom, #050b10, #040909);
-        color: #fcd34d;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      main {
-        flex: 1;
-      }
-      .header-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        padding: 4rem 2rem 2rem;
-        flex-wrap: wrap;
-        text-align: left;
-      }
-      .header-logo {
-        width: 120px;
-        height: auto;
-      }
-      .header-text h1 {
-        font-family: 'Unbounded', sans-serif;
-        font-size: 2.75rem;
-        color: #fcd34d;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        margin-bottom: 0.5rem;
-      }
-      .header-text h2 {
-        font-size: 1.25rem;
-        font-weight: 400;
-        color: #d1d5db;
-      }
-      section {
-        padding: 3rem 1rem;
-        max-width: 800px;
-        margin: 0 auto;
-        animation: fadeIn 1s ease-in-out both;
-        text-align: center;
-      }
-      .banner {
-        width: 100%;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin-top: 3rem;
-      }
-      p {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #d1d5db;
-        margin-bottom: 1.5rem;
-      }
-      .cta {
-        background-color: transparent;
-        border: 2px solid #fcd34d;
-        color: #fcd34d;
-        padding: 1rem 2rem;
-        font-weight: bold;
-        font-size: 1rem;
-        border-radius: 9999px;
-        text-decoration: none;
-        display: inline-block;
-        transition: all 0.3s ease;
-      }
-      .cta:hover {
-        background-color: #fcd34d;
-        color: #1a1a1a;
-      }
-      footer {
-        padding: 2rem;
-        background-color: #111;
-        color: #6b7280;
-        font-size: 0.9rem;
-        text-align: center;
-      }
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @media (max-width: 600px) {
-        .header-container {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-        }
-        .header-logo {
-          width: 100px;
-        }
-        .header-text h1 {
-          font-size: 1.8rem;
-        }
-        .header-text h2 {
-          font-size: 1rem;
-        }
-        section {
-          padding: 2rem 1rem;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <main>
-      <div class="header-container">
-        <img src="Logo_v4.png" alt="Logo Appsgard" class="header-logo" />
-        <div class="header-text">
-          <h1>Appsgard</h1>
-          <h2>Tech from the realm of the gods</h2>
-        </div>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <img src="Logo_v4.png" alt="" width="40" height="40" />
+          Appsgard
+        </a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html" aria-current="page">Accueil</a>
+          <a href="squadmaster.html">SquadMaster</a>
+        </nav>
       </div>
+    </header>
 
-      <section>
-        <p>
-          Bienvenue dans l'univers d'<strong>Appsgard</strong>, une forge numérique dédiée à la création d'applications puissantes et inspirantes. Nous allions la symbolique des mythes anciens à la technologie moderne pour forger les outils de demain.
-        </p>
-        <p>
-          Notre premier artefact, <strong>LeBanc</strong>, est une plateforme innovante conçue pour les clubs et les sportifs amateurs. Elle connecte les joueurs, simplifie l’organisation et donne de la visibilité au sport local.
-        </p>
-        <p>
-          Rejoins-nous dans cette quête technologique.
-        </p>
-        <a href="#" class="cta">Le site sera bientôt en ligne</a>
+    <main>
+      <section class="hero wrap">
+        <div class="hero__grid">
+          <div>
+            <p class="hero__badge">Studio indépendant</p>
+            <h1>Des outils <span>soignés</span>, pensés pour durer.</h1>
+            <p class="hero__lead">
+              Appsgard conçoit des applications Windows utiles, avec une attention particulière à
+              l’expérience utilisateur et à la fiabilité — sans sacrifier le plaisir d’utiliser un
+              bon logiciel.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="squadmaster.html">Découvrir SquadMaster</a>
+              <a class="btn btn--ghost" href="mailto:appsgard.tech@gmail.com">Nous écrire</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="hero__logo-card">
+              <img src="Logo_v4.png" alt="Logo Appsgard" width="200" height="200" />
+            </div>
+          </div>
+        </div>
       </section>
 
-      <img src="Banniere_v1.png" alt="Bannière Appsgard" class="banner" />
+      <section class="section section--tight wrap">
+        <h2 class="section__title">À propos</h2>
+        <p class="section__subtitle">
+          Une forge numérique française : nous aimons mêler exigence technique et sens du détail,
+          pour des produits dont on peut être fiers.
+        </p>
+        <div class="prose">
+          <p>
+            Bienvenue dans l’univers d’<strong>Appsgard</strong>. Nous développons des outils
+            concrets pour des usages réels — en commençant par le jeu et la productivité sur
+            Windows.
+          </p>
+          <p>
+            <strong>LeBanc</strong> reste un projet important : une plateforme pensée pour les clubs
+            et le sport amateur, pour connecter joueurs et structures. Son site dédié viendra en
+            temps voulu compléter cette vitrine.
+          </p>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <h2 class="section__title">Applications</h2>
+        <p class="section__subtitle">
+          Téléchargements, documentation et mises à jour sont centralisés ici et sur GitHub.
+        </p>
+        <div class="cards cards--2">
+          <article class="card">
+            <p class="card__tag">Disponible</p>
+            <h3>SquadMaster</h3>
+            <p>
+              Assistant multibox pour Dofus (Unity) : fenêtres, invitations de groupe, raccourcis
+              globaux et navigation entre personnages.
+            </p>
+            <a class="card__link" href="squadmaster.html">Présentation et téléchargement →</a>
+          </article>
+          <article class="card">
+            <p class="card__tag">À venir</p>
+            <h3>LeBanc</h3>
+            <p>
+              La plateforme pour clubs et sportifs amateurs — organisation simplifiée et visibilité
+              pour le sport local.
+            </p>
+            <span class="card__link" style="opacity: 0.55; cursor: default">Bientôt annoncé</span>
+          </article>
+        </div>
+        <img
+          class="banner-full"
+          src="Banniere_v1.png"
+          alt="Bannière visuelle Appsgard"
+          width="1200"
+          height="400"
+          loading="lazy"
+        />
+      </section>
     </main>
 
-    <footer>
-      <div style="margin-bottom: 1rem;">
-        <strong>Appsgard</strong> — Tech from the realm of the gods
-      </div>
-      <div>
-        <a href="mailto:appsgard.tech@gmail.com" style="color: #9ca3af; text-decoration: none;">appsgard.tech@gmail.com</a>
-      </div>
-      <div style="margin-top: 1rem; font-size: 0.85rem; color: #4b5563;">
-        © 2025 Appsgard — Tous droits réservés
-      </div>
+    <footer class="site-footer">
+      <div class="site-footer__brand">Appsgard</div>
+      <div class="site-footer__tag">Tech from the realm of the gods</div>
+      <a href="mailto:appsgard.tech@gmail.com">appsgard.tech@gmail.com</a>
+      <div class="site-footer__copy">© 2026 Appsgard — Tous droits réservés</div>
     </footer>
   </body>
 </html>

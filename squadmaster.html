@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SquadMaster — application Windows pour le multibox Dofus : invitations, raccourcis, équipes. Téléchargez la dernière release."
+    />
+    <title>SquadMaster — Appsgard</title>
+    <link rel="icon" type="image/png" href="Logo_v4.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <img src="Logo_v4.png" alt="" width="40" height="40" />
+          Appsgard
+        </a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="squadmaster.html" aria-current="page">SquadMaster</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero wrap">
+        <h1>SquadMaster</h1>
+        <p class="lead">
+          Application <strong>Windows</strong> (.NET 8, WPF) pour le <strong>multibox Dofus</strong>
+          : repérer les clients Unity, désigner un chef de groupe, envoyer des invitations
+          (<code>/invite</code>) et piloter les fenêtres avec des <strong>raccourcis globaux</strong>
+          — même lorsque l’interface est réduite dans la zone de notification.
+        </p>
+      </header>
+
+      <section class="section wrap">
+        <div class="download-bar">
+          <p>
+            <strong>Dernière version</strong>
+            <span id="release-tag"></span>
+            — exécutable Windows 64 bits (<strong>self-contained</strong>, runtime .NET inclus),
+            publié sur GitHub Releases.
+          </p>
+          <a
+            id="btn-download"
+            class="btn btn--primary"
+            href="https://github.com/Leidvor/SquadMaster/releases/latest"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Télécharger</a
+          >
+        </div>
+        <p class="prose meta-links">
+          <a href="https://github.com/Leidvor/SquadMaster/releases" rel="noopener noreferrer" target="_blank"
+            >Toutes les releases</a
+          >
+          ·
+          <a href="https://github.com/Leidvor/SquadMaster" rel="noopener noreferrer" target="_blank"
+            >Code source</a
+          >
+          ·
+          <a href="https://discord.gg/9C4y6Tyuex" rel="noopener noreferrer" target="_blank">Discord</a>
+        </p>
+
+        <div class="callout">
+          <strong>Prérequis :</strong> Windows 10 ou 11 (64 bits). L’exe de release est prêt à
+          l’emploi (aucun SDK requis pour l’installer). Pour compiler le dépôt vous-même :
+          <a href="https://dotnet.microsoft.com/download/dotnet/8.0" rel="noopener noreferrer" target="_blank"
+            >SDK .NET 8</a
+          >
+          avec la charge de travail développement Desktop (WPF). Au premier lancement, un antivirus
+          peut être plus curieux avec ce type de binaire self-contained — comportement fréquent.
+        </div>
+
+        <h2 class="section__title">À quoi ça sert ?</h2>
+        <p class="section__subtitle">
+          SquadMaster automatise ce qui est répétitif en multicompte : focus, chat, collage des
+          commandes, respect des délais pour Unity.
+        </p>
+        <div class="feature-grid">
+          <div class="feature">
+            <h4>Détection des fenêtres</h4>
+            <p>
+              Reconnaissance des clients Dofus (Unity), extraction du nom de personnage depuis le
+              titre de fenêtre, tableau trié (chef en tête, puis initiative).
+            </p>
+          </div>
+          <div class="feature">
+            <h4>Invitations de groupe</h4>
+            <p>
+              Le personnage « chef » envoie les <code>/invite Nom</code> dans le jeu, avec des
+              temporisations et des <strong>profils de vitesse</strong> pour s’adapter à votre machine.
+            </p>
+          </div>
+          <div class="feature">
+            <h4>Raccourcis & équipes</h4>
+            <p>
+              Touches globales (afficher l’app, rafraîchir, ré-inviter, précédent/suivant par
+              <strong>Team 1</strong> / <strong>Team 2</strong>) et raccourci par personnage pour
+              activer une fenêtre.
+            </p>
+          </div>
+          <div class="feature">
+            <h4>Configuration & support</h4>
+            <p>
+              Paramètres dans <code>%AppData%\SquadMaster\</code>, import optionnel des touches depuis
+              <code>dofus.json</code>, journaux et paquet support (ZIP) en cas de souci.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <h2 class="section__title">Premier lancement</h2>
+        <p class="section__subtitle">
+          Résumé du flux recommandé — l’application intègre aussi une aide détaillée.
+        </p>
+        <ol class="steps">
+          <li>
+            Lancez <strong>Dofus</strong> (une fenêtre par personnage) et connectez les personnages.
+          </li>
+          <li>
+            Ouvrez <strong>SquadMaster</strong>, cliquez <strong>Rafraîchir</strong> : les lignes
+            apparaissent avec les noms détectés.
+          </li>
+          <li>
+            Cochez <strong>Chef de groupe</strong> sur le personnage qui doit envoyer les invitations
+            dans le chat.
+          </li>
+          <li>
+            Cochez <strong>Sélection</strong> sur les personnages à inviter (en général tous sauf le
+            chef).
+          </li>
+          <li>
+            Utilisez <strong>Inviter</strong> (ou le raccourci global configuré). En cas d’échec
+            partiel, essayez un profil de vitesse plus <em>lent</em> ou vérifiez la touche d’ouverture
+            du chat (import Dofus).
+          </li>
+        </ol>
+      </section>
+
+      <section class="section wrap">
+        <h2 class="section__title">Fermeture de l’application</h2>
+        <p class="section__subtitle">
+          Pour garder les raccourcis globaux actifs, préférez masquer SquadMaster dans la
+          <strong>zone de notification</strong> plutôt que de quitter complètement.
+        </p>
+        <p class="prose">
+          Les raccourcis sont enregistrés via l’API Windows : ils ne fonctionnent que tant que le
+          processus tourne. Référez-vous à la boîte de dialogue de comportement à la fermeture dans
+          l’app pour choisir masquer ou quitter.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand">Appsgard</div>
+      <div class="site-footer__tag">SquadMaster — multibox Dofus</div>
+      <a href="mailto:appsgard.tech@gmail.com">appsgard.tech@gmail.com</a>
+      <div class="site-footer__copy">© 2026 Appsgard — Tous droits réservés</div>
+    </footer>
+
+    <script>
+      (function () {
+        var btn = document.getElementById("btn-download");
+        var tagEl = document.getElementById("release-tag");
+        var api = "https://api.github.com/repos/Leidvor/SquadMaster/releases/latest";
+        fetch(api)
+          .then(function (r) {
+            return r.ok ? r.json() : null;
+          })
+          .then(function (data) {
+            if (!data) return;
+            if (data.tag_name) tagEl.textContent = "(" + data.tag_name + ")";
+            var assets = data.assets || [];
+            var pick =
+              assets.find(function (a) {
+                return /\.(exe|zip)$/i.test(a.name) && /win|windows|x64|portable/i.test(a.name);
+              }) || assets.find(function (a) {
+                return /\.(exe|zip)$/i.test(a.name);
+              });
+            if (pick && pick.browser_download_url) {
+              btn.href = pick.browser_download_url;
+              btn.textContent = "Télécharger " + pick.name;
+            }
+          })
+          .catch(function () {});
+      })();
+    </script>
+  </body>
+</html>
